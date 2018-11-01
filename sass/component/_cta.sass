@@ -1,0 +1,23 @@
+.cta
+  background-color: $secondary
+  background-image: url(../img/couple.jpg)
+  background-size: cover
+  background-position: center
+  padding: 5em 0
+  background-blend-mode: multiply
+  color: $text-inverse
+
+  @media(min-width: 725px)
+    padding: 10em 0
+
+    &::before, &::after
+      content: ''
+      display: block
+      position: absolute
+      width: 100%
+
+    &::before
+      top: 0
+      bottom: 0
+      transform: skewX(45deg)
+      right: -100%
